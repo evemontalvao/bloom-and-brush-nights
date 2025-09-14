@@ -47,6 +47,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Brush & Bloom custom colors
+        'evening-glow': "hsl(var(--evening-glow))",
+        'sage-soft': "hsl(var(--sage-soft))",
+        'terracotta-warm': "hsl(var(--terracotta-warm))",
+        'blush-gentle': "hsl(var(--blush-gentle))",
+        'dusty-pink': "hsl(var(--dusty-pink))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +68,18 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        'heading': "var(--font-heading)",
+        'body': "var(--font-body)",
+      },
+      backgroundImage: {
+        'gradient-evening': "var(--gradient-evening)",
+        'gradient-sage': "var(--gradient-sage)",
+      },
+      boxShadow: {
+        'soft': "var(--shadow-soft)",
+        'dreamy': "var(--shadow-dreamy)",
       },
       keyframes: {
         "accordion-down": {

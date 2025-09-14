@@ -8,35 +8,60 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Brush & Bloom Evening Palette */
+    --background: 35 60% 96%;
+    --foreground: 25 15% 25%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 35 45% 98%;
+    --card-foreground: 25 15% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 35 45% 98%;
+    --popover-foreground: 25 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Terracotta primary */
+    --primary: 18 65% 65%;
+    --primary-foreground: 35 60% 96%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Sage secondary */
+    --secondary: 95 25% 75%;
+    --secondary-foreground: 25 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Dusty rose muted */
+    --muted: 345 30% 88%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Blush accent */
+    --accent: 340 40% 85%;
+    --accent-foreground: 25 15% 25%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 35 60% 96%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 25% 88%;
+    --input: 35 25% 88%;
+    --ring: 18 65% 65%;
 
-    --radius: 0.5rem;
+    /* Design system enhancements */
+    --radius: 1rem;
+    
+    /* Custom Brush & Bloom tokens */
+    --evening-glow: 30 80% 88%;
+    --sage-soft: 95 25% 80%;
+    --terracotta-warm: 18 65% 65%;
+    --blush-gentle: 340 40% 90%;
+    --dusty-pink: 345 35% 82%;
+    
+    /* Gradients */
+    --gradient-evening: linear-gradient(135deg, hsl(var(--evening-glow)), hsl(var(--blush-gentle)));
+    --gradient-sage: linear-gradient(180deg, hsl(var(--sage-soft)), hsl(var(--secondary)));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(var(--terracotta-warm) / 0.15);
+    --shadow-dreamy: 0 8px 32px -8px hsl(var(--dusty-pink) / 0.25);
+    
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
 
     --sidebar-background: 0 0% 98%;
 
