@@ -1,15 +1,18 @@
 import { Instagram, Mail, MapPin } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="py-16 px-6 bg-primary/5 border-t border-border/50">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h3 className="font-heading text-3xl font-semibold text-foreground mb-4">
-            Brush & Bloom
+            {t('heroTitle')}
           </h3>
           <p className="font-body text-muted-foreground max-w-md mx-auto">
-            Intimate art gatherings where creativity meets connection on a private Barcelona terrace.
+            {t('footerDescription')}
           </p>
         </div>
         

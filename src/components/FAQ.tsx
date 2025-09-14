@@ -1,36 +1,39 @@
 import { Shield, Users, Home, Clock, Wine, Palette } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const FAQ = () => {
+  const { t } = useLanguage();
+  
   const faqs = [
     {
       icon: Users,
-      question: "How many people attend each session?",
-      answer: "We keep our gatherings intimate with 6-12 carefully selected guests. This creates a cozy atmosphere where everyone feels comfortable to connect and create."
+      questionKey: "faqQ1",
+      answerKey: "faqA1"
     },
     {
       icon: Shield,
-      question: "How do you ensure a safe space?",
-      answer: "All guests are personally vetted through our application process. We prioritize creating a respectful, inclusive environment where everyone feels welcome to express themselves authentically."
+      questionKey: "faqQ2",
+      answerKey: "faqA2"
     },
     {
       icon: Home,
-      question: "Where do sessions take place?",
-      answer: "Our sessions happen on a private terrace in Barcelona, thoughtfully decorated with plants, soft lighting, and all the materials you need. The exact location is shared upon RSVP confirmation."
+      questionKey: "faqQ3",
+      answerKey: "faqA3"
     },
     {
       icon: Clock,
-      question: "What should I expect time-wise?",
-      answer: "Sessions typically last 2.5-3 hours, including time for introductions, creating, and gentle conversation. We move at a relaxed pace that honors the creative process."
+      questionKey: "faqQ4",
+      answerKey: "faqA4"
     },
     {
       icon: Wine,
-      question: "Is wine included?",
-      answer: "Yes! We provide a selection of wine, along with light refreshments and tea. The evening is designed to nourish both your creative spirit and your senses."
+      questionKey: "faqQ5",
+      answerKey: "faqA5"
     },
     {
       icon: Palette,
-      question: "Do I need experience or materials?",
-      answer: "No experience necessary—just curiosity and openness. All art materials, easels, and supplies are provided. Come as you are, ready to explore and connect."
+      questionKey: "faqQ6",
+      answerKey: "faqA6"
     }
   ];
 
@@ -39,10 +42,10 @@ const FAQ = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mb-6">
-            What to Expect
+            {t('faqTitle')}
           </h2>
           <p className="font-body text-lg text-muted-foreground">
-            Everything you need to know about joining our creative community.
+            {t('faqDescription')}
           </p>
         </div>
         
@@ -57,10 +60,10 @@ const FAQ = () => {
                   </div>
                   <div>
                     <h3 className="font-heading text-lg font-semibold text-foreground mb-3">
-                      {faq.question}
+                      {t(faq.questionKey)}
                     </h3>
                     <p className="font-body text-muted-foreground leading-relaxed">
-                      {faq.answer}
+                      {t(faq.answerKey)}
                     </p>
                   </div>
                 </div>

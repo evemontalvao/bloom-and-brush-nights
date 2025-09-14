@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, User, MessageSquare } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const WaitlistForm = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -14,8 +16,8 @@ const WaitlistForm = () => {
     e.preventDefault();
     // For now, just show a success message
     toast({
-      title: "Welcome to the waitlist! ✨",
-      description: "We'll be in touch soon with details about upcoming sessions.",
+      title: t('toastTitle'),
+      description: t('toastDescription'),
     });
     
     // Reset form
@@ -34,10 +36,10 @@ const WaitlistForm = () => {
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mb-6">
-            Join Our Creative Circle
+            {t('waitlistTitle')}
           </h2>
           <p className="font-body text-lg text-muted-foreground">
-            Be the first to know about upcoming sessions and secure your spot at the easel.
+            {t('waitlistDescription')}
           </p>
         </div>
         
@@ -48,7 +50,7 @@ const WaitlistForm = () => {
               <input
                 type="text"
                 name="name"
-                placeholder="Your name"
+                placeholder={t('yourName')}
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -61,7 +63,7 @@ const WaitlistForm = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="Your email"
+                placeholder={t('yourEmail')}
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -73,7 +75,7 @@ const WaitlistForm = () => {
               <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-muted-foreground" />
               <textarea
                 name="message"
-                placeholder="Tell us what draws you to creative connection (optional)"
+                placeholder={t('messagePlaceholder')}
                 value={formData.message}
                 onChange={handleChange}
                 rows={4}
@@ -85,12 +87,12 @@ const WaitlistForm = () => {
               type="submit"
               className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-4 rounded-xl font-body font-medium transition-all duration-300 shadow-soft hover:shadow-dreamy transform hover:scale-[1.02]"
             >
-              Join the Waitlist
+              {t('joinWaitlist')}
             </button>
           </div>
           
           <p className="text-sm text-muted-foreground text-center mt-6 font-body">
-            We respect your privacy and will only contact you about Brush & Bloom sessions.
+            {t('privacyText')}
           </p>
         </form>
       </div>
