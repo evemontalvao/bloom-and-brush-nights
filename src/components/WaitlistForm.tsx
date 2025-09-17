@@ -32,7 +32,7 @@ const WaitlistForm = () => {
   };
 
   return (
-    <section className="py-20 px-6 bg-gradient-evening">
+    <section id="waitlist" className="py-20 px-6 bg-gradient-evening">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mb-6">

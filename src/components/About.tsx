@@ -4,7 +4,7 @@ const About = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 px-6 bg-gradient-sage">
+    <section id="about" className="py-20 px-6 bg-gradient-sage">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mb-8">
           {t('aboutTitle')}

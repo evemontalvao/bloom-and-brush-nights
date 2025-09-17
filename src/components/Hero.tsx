@@ -28,10 +28,16 @@ const Hero = () => {
         </p>
         
         <div className="space-y-4 sm:space-y-0 sm:space-x-6 sm:flex sm:justify-center">
-          <button className="bg-primary/90 hover:bg-primary text-primary-foreground px-8 py-4 rounded-lg font-body font-medium transition-all duration-300 shadow-soft hover:shadow-dreamy backdrop-blur-sm">
+          <button 
+            onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
+            className="bg-primary/90 hover:bg-primary text-primary-foreground px-8 py-4 rounded-lg font-body font-medium transition-all duration-300 shadow-soft hover:shadow-dreamy backdrop-blur-sm"
+          >
             {t('joinWaitlist')}
           </button>
-          <button className="bg-primary-foreground/20 hover:bg-primary-foreground/30 text-primary-foreground border border-primary-foreground/30 px-8 py-4 rounded-lg font-body font-medium transition-all duration-300 backdrop-blur-sm">
+          <button 
+            onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+            className="bg-primary-foreground/20 hover:bg-primary-foreground/30 text-primary-foreground border border-primary-foreground/30 px-8 py-4 rounded-lg font-body font-medium transition-all duration-300 backdrop-blur-sm"
+          >
             {t('learnMore')}
           </button>
         </div>
