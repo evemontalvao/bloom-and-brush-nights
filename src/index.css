@@ -1,113 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    /* Brush & Bloom Evening Palette */
-    --background: 35 60% 96%;
-    --foreground: 25 15% 25%;
+    /* Bold Warm Maximalist Palette */
+    --background: 38 50% 95%;
+    --foreground: 20 30% 15%;
 
-    --card: 35 45% 98%;
-    --card-foreground: 25 15% 25%;
+    --card: 38 40% 97%;
+    --card-foreground: 20 30% 15%;
 
-    --popover: 35 45% 98%;
-    --popover-foreground: 25 15% 25%;
+    --popover: 38 40% 97%;
+    --popover-foreground: 20 30% 15%;
 
-    /* Terracotta primary */
-    --primary: 18 65% 65%;
-    --primary-foreground: 35 60% 96%;
+    /* Burnt Orange / Vermillion primary */
+    --primary: 14 85% 52%;
+    --primary-foreground: 40 100% 97%;
 
-    /* Sage secondary */
-    --secondary: 95 25% 75%;
-    --secondary-foreground: 25 15% 25%;
+    /* Deep Sage Green */
+    --secondary: 145 35% 38%;
+    --secondary-foreground: 40 100% 97%;
 
-    /* Dusty rose muted */
-    --muted: 345 30% 88%;
-    --muted-foreground: 25 15% 45%;
+    /* Warm Sand muted */
+    --muted: 35 30% 85%;
+    --muted-foreground: 20 15% 45%;
 
-    /* Blush accent */
-    --accent: 340 40% 85%;
-    --accent-foreground: 25 15% 25%;
+    /* Hot Pink accent */
+    --accent: 340 70% 55%;
+    --accent-foreground: 40 100% 97%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 35 60% 96%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 40 100% 97%;
 
-    --border: 35 25% 88%;
-    --input: 35 25% 88%;
-    --ring: 18 65% 65%;
+    --border: 35 20% 82%;
+    --input: 35 20% 82%;
+    --ring: 14 85% 52%;
 
-    /* Design system enhancements */
-    --radius: 1rem;
-    
-    /* Custom Brush & Bloom tokens */
-    --evening-glow: 30 80% 88%;
-    --sage-soft: 95 25% 80%;
-    --terracotta-warm: 18 65% 65%;
-    --blush-gentle: 340 40% 90%;
-    --dusty-pink: 345 35% 82%;
-    
-    /* Gradients */
-    --gradient-evening: linear-gradient(135deg, hsl(var(--evening-glow)), hsl(var(--blush-gentle)));
-    --gradient-sage: linear-gradient(180deg, hsl(var(--sage-soft)), hsl(var(--secondary)));
-    
+    --radius: 1.5rem;
+
+    /* Custom bold tokens */
+    --terracotta: 14 85% 52%;
+    --forest: 145 35% 38%;
+    --hot-pink: 340 70% 55%;
+    --golden: 42 90% 58%;
+    --cream: 38 50% 95%;
+    --deep-brown: 20 30% 15%;
+    --coral: 8 75% 62%;
+    --peach: 25 80% 80%;
+    --olive: 85 25% 50%;
+    --lavender: 270 40% 70%;
+
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(var(--terracotta-warm) / 0.15);
-    --shadow-dreamy: 0 8px 32px -8px hsl(var(--dusty-pink) / 0.25);
-    
+    --shadow-bold: 0 8px 30px -6px hsl(14 85% 52% / 0.2);
+    --shadow-pop: 0 12px 40px -10px hsl(340 70% 55% / 0.25);
+
     /* Typography */
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Inter', sans-serif;
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'DM Sans', sans-serif;
+    --font-accent: 'Space Grotesk', sans-serif;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
+    --background: 20 20% 8%;
+    --foreground: 38 30% 90%;
+    --card: 20 20% 12%;
+    --card-foreground: 38 30% 90%;
+    --popover: 20 20% 12%;
+    --popover-foreground: 38 30% 90%;
+    --primary: 14 85% 55%;
+    --primary-foreground: 20 20% 8%;
+    --secondary: 145 30% 45%;
+    --secondary-foreground: 20 20% 8%;
+    --muted: 20 15% 20%;
+    --muted-foreground: 38 15% 65%;
+    --accent: 340 65% 60%;
+    --accent-foreground: 20 20% 8%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --destructive-foreground: 38 30% 90%;
+    --border: 20 15% 22%;
+    --input: 20 15% 22%;
+    --ring: 14 85% 55%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -126,5 +110,35 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body);
   }
+}
+
+/* Organic blob shapes */
+.blob-1 {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+.blob-2 {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.blob-3 {
+  border-radius: 50% 50% 30% 70% / 40% 60% 40% 60%;
+}
+
+/* Wavy divider */
+.wavy-divider {
+  position: relative;
+}
+
+.wavy-divider::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: inherit;
+  clip-path: path('M0,40 C150,80 350,0 500,40 C650,80 850,0 1000,40 L1000,80 L0,80 Z');
 }
