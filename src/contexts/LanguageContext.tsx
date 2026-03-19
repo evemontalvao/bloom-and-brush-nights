@@ -43,7 +43,17 @@ const getTranslations = () => ({
     heroTitle: "Brush & Bloom",
     heroDescription: "Where twilight conversations meet quiet joy, and the smell of incense mingles with creativity. Intimate art gatherings on a private Barcelona terrace.",
     joinWaitlist: "Join the Waitlist",
+    bookSession: "Book a Session",
     learnMore: "Learn More",
+
+    // Upcoming Sessions
+    upcomingLabel: "UPCOMING DATES",
+    upcomingTitle: "Grab Your Easel",
+    upcomingDescription: "Only 6 spots per session. Pick a date and fill out the form to reserve yours.",
+    spotsLeft: "spots left",
+    full: "Full",
+    bookSpot: "Book a Spot",
+    calendarNote: "New dates are added regularly. Follow us on Instagram for announcements.",
     
     // About
     aboutTitle: "The Experience",
@@ -103,7 +113,17 @@ const getTranslations = () => ({
     heroTitle: "Brush & Bloom",
     heroDescription: "Donde las conversaciones del atardecer encuentran la alegría silenciosa, y el aroma del incienso se mezcla con la creatividad. Encuentros artísticos íntimos en una terraza privada de Barcelona.",
     joinWaitlist: "Únete a la Lista de Espera",
+    bookSession: "Reservar Sesión",
     learnMore: "Saber Más",
+
+    // Upcoming Sessions
+    upcomingLabel: "PRÓXIMAS FECHAS",
+    upcomingTitle: "Coge Tu Caballete",
+    upcomingDescription: "Solo 6 plazas por sesión. Elige una fecha y rellena el formulario para reservar la tuya.",
+    spotsLeft: "plazas libres",
+    full: "Completo",
+    bookSpot: "Reservar Plaza",
+    calendarNote: "Se añaden nuevas fechas regularmente. Síguenos en Instagram para anuncios.",
     
     // About
     aboutTitle: "La Experiencia",
@@ -163,7 +183,17 @@ const getTranslations = () => ({
     heroTitle: "Brush & Bloom",
     heroDescription: "On les converses del capvespre troben l'alegria silenciosa, i l'aroma de l'encens es barreja amb la creativitat. Trobades artístiques íntimes en una terrassa privada de Barcelona.",
     joinWaitlist: "Apunta't a la Llista d'Espera",
+    bookSession: "Reservar Sessió",
     learnMore: "Saber-ne Més",
+
+    // Upcoming Sessions
+    upcomingLabel: "PROPERES DATES",
+    upcomingTitle: "Agafa el Teu Cavallete",
+    upcomingDescription: "Només 6 places per sessió. Tria una data i omple el formulari per reservar la teva.",
+    spotsLeft: "places lliures",
+    full: "Complet",
+    bookSpot: "Reservar Plaça",
+    calendarNote: "S'afegeixen noves dates regularment. Segueix-nos a Instagram per anuncis.",
     
     // About
     aboutTitle: "L'Experiència",
@@ -223,7 +253,17 @@ const getTranslations = () => ({
     heroTitle: "Brush & Bloom",
     heroDescription: "Onde conversas ao crepúsculo encontram alegria silenciosa, e o aroma de incenso se mistura com a criatividade. Encontros artísticos íntimos em um terraço privado em Barcelona.",
     joinWaitlist: "Entre na Lista de Espera",
+    bookSession: "Reservar Sessão",
     learnMore: "Saiba Mais",
+
+    // Upcoming Sessions
+    upcomingLabel: "PRÓXIMAS DATAS",
+    upcomingTitle: "Pegue Seu Cavalete",
+    upcomingDescription: "Apenas 6 vagas por sessão. Escolha uma data e preencha o formulário para reservar a sua.",
+    spotsLeft: "vagas restantes",
+    full: "Lotado",
+    bookSpot: "Reservar Vaga",
+    calendarNote: "Novas datas são adicionadas regularmente. Siga-nos no Instagram para anúncios.",
     
     // About
     aboutTitle: "A Experiência",

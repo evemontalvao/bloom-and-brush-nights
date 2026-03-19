@@ -43,10 +43,10 @@ const Hero = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button
-            onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('sessions-calendar')?.scrollIntoView({ behavior: 'smooth' })}
             className="bg-golden hover:bg-golden/90 text-deep-brown px-10 py-5 rounded-full font-accent font-semibold text-lg transition-all duration-300 shadow-bold hover:shadow-pop hover:scale-105"
           >
-            {t('joinWaitlist')}
+            {t('bookSession')}
           </button>
           <button
             onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}

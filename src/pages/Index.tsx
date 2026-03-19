@@ -1,8 +1,8 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import SessionTypes from "@/components/SessionTypes";
+import UpcomingSessions from "@/components/UpcomingSessions";
 import FAQ from "@/components/FAQ";
-import WaitlistForm from "@/components/WaitlistForm";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -11,8 +11,8 @@ const Index = () => {
       <Hero />
       <About />
       <SessionTypes />
+      <UpcomingSessions />
       <FAQ />
-      <WaitlistForm />
       <Footer />
     </div>
   );
