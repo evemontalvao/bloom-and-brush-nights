@@ -183,7 +183,17 @@ const getTranslations = () => ({
     heroTitle: "Brush & Bloom",
     heroDescription: "On les converses del capvespre troben l'alegria silenciosa, i l'aroma de l'encens es barreja amb la creativitat. Trobades artístiques íntimes en una terrassa privada de Barcelona.",
     joinWaitlist: "Apunta't a la Llista d'Espera",
+    bookSession: "Reservar Sessió",
     learnMore: "Saber-ne Més",
+
+    // Upcoming Sessions
+    upcomingLabel: "PROPERES DATES",
+    upcomingTitle: "Agafa el Teu Cavallete",
+    upcomingDescription: "Només 6 places per sessió. Tria una data i omple el formulari per reservar la teva.",
+    spotsLeft: "places lliures",
+    full: "Complet",
+    bookSpot: "Reservar Plaça",
+    calendarNote: "S'afegeixen noves dates regularment. Segueix-nos a Instagram per anuncis.",
     
     // About
     aboutTitle: "L'Experiència",
