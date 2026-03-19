@@ -253,7 +253,17 @@ const getTranslations = () => ({
     heroTitle: "Brush & Bloom",
     heroDescription: "Onde conversas ao crepúsculo encontram alegria silenciosa, e o aroma de incenso se mistura com a criatividade. Encontros artísticos íntimos em um terraço privado em Barcelona.",
     joinWaitlist: "Entre na Lista de Espera",
+    bookSession: "Reservar Sessão",
     learnMore: "Saiba Mais",
+
+    // Upcoming Sessions
+    upcomingLabel: "PRÓXIMAS DATAS",
+    upcomingTitle: "Pegue Seu Cavalete",
+    upcomingDescription: "Apenas 6 vagas por sessão. Escolha uma data e preencha o formulário para reservar a sua.",
+    spotsLeft: "vagas restantes",
+    full: "Lotado",
+    bookSpot: "Reservar Vaga",
+    calendarNote: "Novas datas são adicionadas regularmente. Siga-nos no Instagram para anúncios.",
     
     // About
     aboutTitle: "A Experiência",
